@@ -13,9 +13,9 @@ document.querySelector('.b-0').onclick = makeZero;
 //Задание 1
 //Используйте метод getElementById, чтобы найти элемент <p>. При нажатии на кнопку измените его текст на "Привет!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
-
+const paragraph1 = document.getElementById('practicum');
 function makeOne() {
-	//Ваш код
+    paragraph1.innerText = 'Привет!';//Ваш код
 }
 
 document.querySelector('.b-1').onclick = makeOne;
@@ -23,9 +23,9 @@ document.querySelector('.b-1').onclick = makeOne;
 //Задание 2
 //Используйте метод getElementById, чтобы найти элемент <span>. При нажатии на кнопку измените его текст на "Привет, Мир!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
-
+const element = document.getElementById('practicum2');
 function makeTwo() {
-	//Ваш код
+	element.textContent = 'Привет, мир!'
 }
 
 document.querySelector('.b-2').onclick = makeTwo;
@@ -33,9 +33,9 @@ document.querySelector('.b-2').onclick = makeTwo;
 //Задание 3
 //Используйте метод querySelector, чтобы найти элемент <h1>. При нажатии на кнопку измените его текст на "Заголовок изменен!"
 //Подсказка: Используйте метод для изменения текстового содержимого элемента (innerHTML/innerText/textContent)
-
+const hidden = document.querySelector('#practicum3');
 function makeThree() {
-	//Ваш код
+	hidden.textContent = 'Заголовок изменен!'
 }
 
 document.querySelector('.b-3').onclick = makeThree;
@@ -43,9 +43,9 @@ document.querySelector('.b-3').onclick = makeThree;
 //Задание 4
 //Используйте метод querySelector, чтобы найти элемент <div>. При нажатии на кнопку измените его фоновый цвет на красный.
 //Подсказка: Используйте свойство style для изменения стилей элемента
-
+const colorElement = document.querySelector('#practicum4');
 function makeFour() {
-	//Ваш код
+	colorElement.style.backgroundColor = 'red'; //Ваш код
 }
 
 document.querySelector('.b-4').onclick = makeFour;
@@ -53,9 +53,9 @@ document.querySelector('.b-4').onclick = makeFour;
 //Задание 5
 //Используйте метод getElementById, чтобы найти элемент <input>. При нажатии на кнопку измените его значение на "Новое значение".
 //Подсказка: Используйте свойство value для изменения значения элемента формы
-
+const valueElement = document.getElementById('practicum5');
 function makeFive() {
-	//Ваш код
+	valueElement.value = 'Новое значение';
 }
 
 document.querySelector('.b-5').onclick = makeFive;
@@ -65,7 +65,7 @@ document.querySelector('.b-5').onclick = makeFive;
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента
 
 function makeSix() {
-	var img = document.getElementById('practicum6');
+	let img = document.getElementById('practicum6');
 	img.src = 'newimage.jpg';
 	img.alt = 'Новое изображение';
 }
@@ -75,9 +75,10 @@ document.querySelector('.b-6').onclick = makeSix;
 //Задание 7
 //Используйте метод querySelector, чтобы найти элемент <a>. При нажатии на кнопку измените его href на "https://www.google.com", а название ссылки на "Ссылка на Google".
 //Подсказка: Используйте знак равенства для изменения атрибутов элемента и метод для изменения текстового содержимого элемента
-
+const linkElement = document.querySelector('#practicum7');
 function makeSeven() {
-	//Ваш код
+	linkElement.href = 'https://www.google.com';
+	linkElement.innerText = 'Ссылка на Google';
 }
 
 document.querySelector('.b-7').onclick = makeSeven;
